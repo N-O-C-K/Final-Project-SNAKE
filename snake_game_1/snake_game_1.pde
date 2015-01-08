@@ -1,39 +1,24 @@
 boolean gameStart = false;
 
-
-int x, y, sz;
+  PVector loc, vel;
+  int sz;
+snakebody play;
 
 void setup() {
   size(600, 500);
-  x=width/2;
-  y= height/2;
-  sz=30;
+//  x=width/2;
+//  y= height/2;
+//  sz=30;
+loc= new PVector(width/2, height/2);
+vel= new PVector(2,2);
+play= new snakebody();
 }
 
 void draw() {
   background(0);
-  if (gameStart = true) {
-   
-    ellipse(x, y, sz, sz);
-
-    if (keyPressed == true) {
-      if (key== CODED) {
-        if (keyCode == UP) {
-          y -= 2;
-        } 
-        if (keyCode == DOWN) {
-          y += 2;
-        }
-        if (keyCode == RIGHT) {
-          x += 2;
-        }
-        if (keyCode == LEFT) {
-          x-= 2;
-        }
-      }
-    }
-  }
-}
+ play.move;
+ play.display;
+ play.controls;
 
 void mousePressed() {
   gameStart = !gameStart;

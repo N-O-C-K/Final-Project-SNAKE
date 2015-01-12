@@ -6,11 +6,11 @@ class snakebody {
   //what does the snakebody contain
   snakebody() {
     sz=30;
-    loc= new PVector(width/2, height/2):;
+    loc= new PVector(width/2, height/2);
     vel= new PVector(1, 1);
   }
 
-//the colour and circle shape of the snake head
+  //the colour and circle shape of the snake head
   void display() {
     fill(#771FED);
     ellipse(loc.x, loc.y, sz, sz);
@@ -20,7 +20,7 @@ class snakebody {
   void move() {
     loc.mult(vel);
   }
-  void controls()
+  void controls() {
     if (keyPressed == true) {
       if (key== CODED) {
         if (keyCode == UP) {
@@ -38,5 +38,5 @@ class snakebody {
       }
     }
   }
-}
 
+}

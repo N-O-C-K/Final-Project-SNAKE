@@ -1,11 +1,12 @@
 class snakebody {
   PVector loc, vel;
-  int sz;
-  //the class float components
+  int sz, lenth;
+  //the class float variables
 
-  //what does the snakebody contain
+  //constructor
   snakebody() {
     sz=30;
+    lenth= 1; 
     loc= new PVector(width/2, height/2);
     vel= new PVector(1, 1);
   }
@@ -38,5 +39,9 @@ class snakebody {
       }
     }
   }
+//boolean checkhit(){
+//  for(int i=1; int < lenth; i++){
+//    if(dist. 
+
 
 }

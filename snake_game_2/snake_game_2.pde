@@ -1,17 +1,17 @@
 snakebody snake;
 apple food;
-PImage img;
+PImage grass;
 
 void setup() {
   snake = new snakebody();
   food= new apple();
   size(600, 500);
-  img = loadImage ("grass!.jpg");
+  grass = loadImage ("grass!.jpg");
 frameRate = 5;
 }
 
 void draw() {
-  background (img);
+  background (grass);
   snake.move();
   snake.display();
   food.display();

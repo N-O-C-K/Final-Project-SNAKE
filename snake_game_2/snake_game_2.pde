@@ -1,17 +1,24 @@
 snakebody snake;
 apple food;
-PImage img;
+PImage grass,apple;
+int scorekeeper;
 
 void setup() {
   snake = new snakebody();
   food= new apple();
   size(600, 500);
+<<<<<<< HEAD
   img = loadImage ("grass!.jpg");
 frameRate(20);
+=======
+  grass = loadImage ("grass!.jpg");
+  apple = loadImage("bitten apple.png");
+  frameRate = 5;
+>>>>>>> origin/master
 }
 
 void draw() {
-  background (img);
+  background (grass);
   snake.move();
   snake.display();
   food.display();
@@ -41,5 +48,4 @@ void keyPressed() {
     }
   }
 }
-
 

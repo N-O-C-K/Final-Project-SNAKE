@@ -15,6 +15,7 @@ class snakebody {
     y= new ArrayList ();
     x.add(random(height));
     y.add( random(width));
+    stroke(.5);
   }
   // if the direction is tested correct then move in that direction
   void move() {

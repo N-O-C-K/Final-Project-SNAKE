@@ -7,7 +7,7 @@ void setup() {
   food= new apple();
   size(600, 500);
   img = loadImage ("grass!.jpg");
-frameRate(15);
+frameRate(30);
 }
 
 void draw() {

@@ -3,7 +3,6 @@ class apple {
   float x, y ;
   PImage bitten;
 
-
   //constructor
   apple() {
     x = random (width);
@@ -14,13 +13,11 @@ class apple {
   //what is it displaying
   void display() {
     //insert the red "good" apple that grows the snake
-<<<<<<< HEAD
+   
+    image(bitten, x, y);
 
- ellipse(x,y,25,25);
-=======
-    bitten(bitten, x, y);
->>>>>>> origin/master
   }
+
 
   //after you eat the food, it'll reset to a new random location
   void reset() {

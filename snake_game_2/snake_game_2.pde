@@ -1,20 +1,16 @@
 snakebody snake;
 apple food;
-PImage grass,apple;
+PImage grass, apple;
 int scorekeeper;
 
 void setup() {
   snake = new snakebody();
   food= new apple();
   size(600, 500);
-<<<<<<< HEAD
-  img = loadImage ("grass!.jpg");
-frameRate(20);
-=======
   grass = loadImage ("grass!.jpg");
+  frameRate(20);
   apple = loadImage("bitten apple.png");
   frameRate = 5;
->>>>>>> origin/master
 }
 
 void draw() {

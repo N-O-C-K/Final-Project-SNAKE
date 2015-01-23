@@ -7,7 +7,7 @@ class apple {
   apple() {
     x = random (width);
     y = random (height);
-    bitten = loadImage("45 pix.jpg");
+    bitten = loadImage("0001.png");
   }
 
   //what is it displaying

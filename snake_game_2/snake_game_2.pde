@@ -1,3 +1,5 @@
+
+//  start page and pause page
 snakebody snake;
 apple food;
 PImage grass, apple;
@@ -9,8 +11,9 @@ void setup() {
   size(600, 500);
   grass = loadImage ("grass!.jpg");
   frameRate(20);
-  apple = loadImage("bitten apple.png");
+  apple = loadImage("biten apple2.png");
   frameRate = 5;
+  scorekeeper = 0;
 }
 
 void draw() {
@@ -22,6 +25,9 @@ void draw() {
   if ( dist(food.x, food.y, snake.x.get(0), snake.y.get(0)) < snake.sz ) {
     food.reset();
     snake.snakegrow();
+  }
+  if (snake.lenth > scorekeeper) {
+    scorekeeper = snake.lenth;
   }
 }
 

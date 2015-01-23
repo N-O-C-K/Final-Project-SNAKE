@@ -27,17 +27,24 @@ void draw() {
     food.reset();
     snake.snakegrow();
   }
-
+//this is to keep the score updated with the length of the snake as it goes
   if (snake.lenth > scorekeeper) {
     scorekeeper = snake.lenth;
   }
-}
-//drawing the score keeper
-void drawscorekeeper() {
-  fill(#226427);
-  textSize(30);
-  text("SCORE:" + snake.lenth, 100, 23);
-}
+  //if the snake resets, the scorekeeper will follow
+  }
+  
+  
+  //drawing the score keeper
+  void drawscorekeeper() {
+    fill(#226427);
+    textSize(20);
+    //this is just what the current length of it is.
+    text("SCORE:" + snake.lenth, 90, 30);
+    textSize(20);
+    //the all time highscore
+    text("HIGH SCORE:" + scorekeeper, 400, 30);
+  }
 
 
 

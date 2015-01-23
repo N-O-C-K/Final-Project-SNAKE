@@ -7,17 +7,15 @@ class apple {
   apple() {
     x = random (width);
     y = random (height);
-    bitten = loadImage("biten apple2.png");
+    bitten = loadImage("45 pix.jpg");
   }
 
   //what is it displaying
   void display() {
-    //insert the red "good" apple that grows the snake
-   
+    //insert the red apple that grows the snake
+
     image(bitten, x, y);
-
   }
-
 
   //after you eat the food, it'll reset to a new random location
   void reset() {

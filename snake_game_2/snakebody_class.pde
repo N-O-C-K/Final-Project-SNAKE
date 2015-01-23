@@ -6,7 +6,7 @@ class snakebody {
   float sz;
 
   //snake constructor
-  
+
   snakebody() {
     lenth = 1;
     sz = 35;
@@ -49,7 +49,7 @@ class snakebody {
       y.add(ytemp);
     }
   }
-  
+  //if the snake goes back on itself, then all of it will dissappear and go back to 1
   boolean checkEaten() {
     for (int i=1; i <lenth; i++) {
       if (dist(x.get(0), y.get(0), x.get(i), y.get(i)) < sz) {
@@ -62,12 +62,12 @@ class snakebody {
   //this is what the snake will look like
   void display() {
     for (int i = 0; i < lenth; i++) {
-      fill(250,0,0, map(i-1, 0, lenth-1, 250, 0));
+      fill(250, 0, map(i-1, 0, lenth-1, 250, 0));
       ellipse(x.get(i), y.get(i), sz, sz);
     }
   }
 
-  //whenever the snake eats, it'll grow
+  //whenever the snake eats, it'll grow by one size
   void snakegrow() {
     x.add(x.get(lenth -1) + sz) ;
     y.add(y.get(lenth -1) + sz) ;

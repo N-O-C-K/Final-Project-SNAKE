@@ -13,7 +13,7 @@ void setup() {
   food= new apple();
   size(600, 500);
   grass = loadImage ("grass!.jpg");
-  frameRate(20);
+  frameRate(15);
   scorekeeper = 0;
   imageMode(CENTER);
   startscreen = true;
@@ -48,7 +48,7 @@ void draw() {
   }
   //if the snake resets, the scorekeeper will follow
 }
-
+//if the game is true (so it started) then the snake will appear and you start playing
 void gamestart() {
   if (gamestart == true) {
     snake.move();

@@ -1,6 +1,5 @@
 
 //  start page and pause page
-
 boolean gamestart, startscreen;
 
 snakebody snake;
@@ -26,13 +25,13 @@ void draw() {
   gamestart();
   drawscorekeeper();
 
-//this is the activation of the game. press space bar to play
+  //this is the activation of the game. press space bar to play
   if ( keyPressed == true) {
     if (key == ' ') {
       gamestart = true;
     }
   }
-//once the game starts, the beginning screen is no longer displayed
+  //once the game starts, the beginning screen is no longer displayed
   if ( gamestart==true) {
     startscreen = false;
   }

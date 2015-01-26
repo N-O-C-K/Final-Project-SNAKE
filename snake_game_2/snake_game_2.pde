@@ -60,13 +60,13 @@ void gamestart() {
 void drawscorekeeper() {
   fill(#226427);
   textSize(20);
-  //this is just what the current length of it is.
+  //this is just what the current length of it is it changes with the snake
   text("SCORE:" + snake.lenth, 90, 30);
   textSize(20);
-  //the all time highscore
+  //the all time highscore which doesn't refresh with the snake
   text("HIGH SCORE:" + scorekeeper, 400, 30);
 }
-
+//this is what the startscreen will display, this screen will become untrue and dissappear after pressing space
 void startscreen() {
   if (startscreen == true) {
     background (grass);
@@ -79,7 +79,7 @@ void startscreen() {
   }
 }
 
-//the direction keys being pressed will change the direction of the snake particles
+//the direction keys being pressed will change the direction which will be tested and them move the snake particles
 void keyPressed() {
   if (key == CODED) {
     if (keyCode == LEFT) {

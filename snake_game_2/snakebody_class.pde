@@ -38,7 +38,7 @@ class snakebody {
     x.set(0, (x.get(0) + width) % width);
     y.set( 0, (y.get(0) + height) % height);
 
-    //if it gets eaten, then the whole tail needs to disappear
+  //if the snake goes back on itself, then all of it will dissappear and go back to 1
     if (checkEaten() == true ) {
       lenth= 1;
       float xtemp = x.get (0);
@@ -49,7 +49,7 @@ class snakebody {
       y.add(ytemp);
     }
   }
-  //if the snake goes back on itself, then all of it will dissappear and go back to 1
+//this is what makes up the "eating" part, testing it is eating itself
   boolean checkEaten() {
     for (int i=1; i <lenth; i++) {
       if (dist(x.get(0), y.get(0), x.get(i), y.get(i)) < sz) {
